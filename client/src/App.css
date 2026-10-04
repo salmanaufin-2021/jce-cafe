@@ -1,0 +1,889 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+
+/* JCE COLOURS */
+
+:root {
+  --jce-blue: #174a8b;
+  --jce-dark-blue: #103663;
+  --jce-red: #c62828;
+  --jce-light-blue: #eaf2fb;
+  --jce-white: #ffffff;
+  --jce-grey: #666666;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg,
+      #eaf2fb,
+      #ffffff);
+
+  text-align: center;
+}
+
+
+.home-content {
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 20px;
+
+  width: 90%;
+  max-width: 600px;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.15);
+
+  border-top: 6px solid var(--jce-blue);
+}
+
+
+/* COLLEGE LOGO ON HOME */
+
+.cafe-logo {
+  width: 150px;
+  height: 150px;
+
+  margin: 10px auto 15px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 8px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cafe-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+}
+
+/* HOME TEXT */
+
+.home-content h1 {
+  font-size: 45px;
+
+  color: var(--jce-blue);
+
+  margin: 10px;
+}
+
+
+.home-content h2 {
+  color: var(--jce-red);
+
+  margin: 20px;
+}
+
+
+.home-content h3 {
+  color: #444;
+}
+
+
+.home-content p {
+  color: var(--jce-grey);
+
+  font-size: 17px;
+}
+
+
+/* START BUTTON */
+
+.start-button {
+  margin-top: 20px;
+
+  padding: 13px 35px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: var(--jce-blue);
+
+  color: white;
+
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+
+.start-button:hover {
+  background: var(--jce-dark-blue);
+}
+
+
+/* =========================
+   LOGIN AND REGISTER
+========================= */
+
+.login-container {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg,
+      #eaf2fb,
+      #ffffff);
+}
+
+
+.login-box {
+  background: white;
+
+  width: 380px;
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.15);
+
+  border-top: 5px solid var(--jce-blue);
+}
+
+
+/* LOGO ON LOGIN PAGE */
+
+/* CIRCULAR JCE LOGO ON LOGIN / REGISTER */
+
+.form-icon {
+  width: 110px;
+  height: 110px;
+
+  margin: 0 auto 15px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 6px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-icon img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+}
+
+.login-box h2 {
+  color: var(--jce-blue);
+
+  margin-bottom: 5px;
+}
+
+
+.login-box p {
+  color: #777;
+
+  margin-bottom: 25px;
+}
+
+
+/* INPUTS */
+
+.login-box input {
+  width: 100%;
+
+  padding: 13px;
+
+  margin: 8px 0;
+
+  border: 1px solid #ccc;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+}
+
+
+.login-box input:focus {
+  outline: none;
+
+  border: 2px solid var(--jce-blue);
+}
+
+
+/* LOGIN BUTTONS */
+
+.login-box button {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 10px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: var(--jce-blue);
+
+  color: white;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+
+.login-box button:hover {
+  background: var(--jce-dark-blue);
+}
+
+
+/* REGISTER BUTTON */
+
+.login-box .register-button {
+  background: var(--jce-red);
+}
+
+
+.login-box .register-button:hover {
+  background: #c62828;
+}
+
+
+/* BACK BUTTON */
+
+.login-box .back-button {
+  background: #777;
+}
+
+
+.login-box .back-button:hover {
+  background: #555;
+}
+
+
+/* =========================
+   MENU PAGE
+========================= */
+
+.menu-page {
+  min-height: 100vh;
+
+  background: #f4f7fb;
+}
+
+
+/* =========================
+   MENU HEADER
+========================= */
+
+.menu-header {
+  background: var(--jce-blue);
+
+  color: white;
+
+  padding: 15px 7%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+.header-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* SMALL COLLEGE LOGO */
+
+.small-logo {
+  width: 65px;
+  height: 65px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 6px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+.small-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+}
+
+/* HEADER TEXT */
+
+.menu-header h1 {
+  margin: 20px 0 10px;
+  color: white;
+}
+
+
+.menu-header p {
+  margin: 20px 0 10px;
+}
+
+
+/* HEADER BUTTONS */
+
+.header-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.cart-button,
+.logout-button {
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+
+/* CART */
+.cart-icon {
+  position: relative;
+
+  width: 32px;
+  height: 28px;
+
+  display: inline-block;
+
+  border: 4px solid var(--jce-blue);
+
+  border-top: none;
+
+  transform: skew(-8deg);
+
+  margin-right: 5px;
+}
+
+
+/* Cart handle */
+
+.cart-icon::before {
+  content: "";
+
+  position: absolute;
+
+  width: 13px;
+  height: 4px;
+
+  background: var(--jce-blue);
+
+  left: -11px;
+  top: -8px;
+
+  transform: rotate(10deg);
+}
+
+
+/* Cart top line */
+
+.cart-icon::after {
+  content: "";
+
+  position: absolute;
+
+  width: 28px;
+  height: 4px;
+
+  background: var(--jce-blue);
+
+  left: 0;
+  top: -2px;
+}
+
+
+/* Wheels */
+
+.cart-wheel {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  background: var(--jce-blue);
+
+  border-radius: 50%;
+
+  bottom: -10px;
+}
+
+.wheel-one {
+  left: 3px;
+}
+
+.wheel-two {
+  right: 3px;
+}
+
+.cart-button {
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  background: white;
+  color: var(--jce-blue);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-button:hover {
+  background: #eaf2fb;
+  transform: translateY(-1px);
+}
+
+/* LOGOUT */
+
+.logout-button {
+  background: var(--jce-red);
+
+  color: white;
+}
+
+
+.logout-button:hover {
+  background: #a51f1f;
+}
+
+
+/* =========================
+   MENU CONTENT
+========================= */
+
+.menu-content {
+  width: 90%;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 35px 0;
+
+  text-align: center;
+}
+
+
+.menu-content h2 {
+  color: var(--jce-blue);
+
+  font-size: 30px;
+}
+
+
+.menu-description {
+  color: #666;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOD GRID
+========================= */
+
+.food-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================
+   FOOD CARD
+========================= */
+
+.food-card {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.12);
+
+  transition: 0.2s;
+}
+
+
+.food-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 7px 18px rgba(0, 0, 0, 0.18);
+}
+
+
+/* FOOD IMAGE */
+
+.food-image {
+  width: 100%;
+
+  height: 180px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+
+  background: #f5f5f5;
+}
+
+
+.food-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* FOOD NAME */
+
+.food-card h3 {
+  color: var(--jce-blue);
+
+  font-size: 20px;
+}
+
+
+/* PRICE */
+
+.food-price {
+  color: var(--jce-red);
+
+  font-size: 19px;
+
+  font-weight: bold;
+}
+
+
+/* ADD BUTTON */
+
+.add-button {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: var(--jce-blue);
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+.add-button:hover {
+  background: var(--jce-dark-blue);
+}
+
+
+/* =========================
+   CART PAGE
+========================= */
+
+.cart-page {
+  min-height: 100vh;
+
+  background: #f4f7fb;
+
+  padding: 50px 20px;
+}
+
+
+.cart-box {
+  background: white;
+
+  max-width: 700px;
+
+  margin: auto;
+
+  padding: 35px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.15);
+
+  border-top: 5px solid var(--jce-blue);
+}
+
+
+.cart-box h1 {
+  text-align: center;
+
+  color: var(--jce-blue);
+}
+
+
+.empty-cart {
+  text-align: center;
+
+  color: #777;
+
+  padding: 30px;
+}
+
+
+/* CART ITEM */
+
+.cart-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #ddd;
+
+  padding: 15px 5px;
+}
+
+
+.cart-item-details {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.cart-item-details img {
+  width: 70px;
+
+  height: 60px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+
+.cart-item p {
+  margin: 5px 0;
+
+  color: var(--jce-red);
+}
+
+
+/* REMOVE BUTTON */
+
+.remove-button {
+  padding: 7px 12px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #d9534f;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+.remove-button:hover {
+  background: #b52b27;
+}
+
+
+/* TOTAL */
+
+.total-box {
+  text-align: right;
+
+  color: var(--jce-blue);
+
+  margin-top: 20px;
+}
+
+
+/* PLACE ORDER */
+
+.place-order-button {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: var(--jce-blue);
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+}
+
+
+.place-order-button:hover {
+  background: var(--jce-dark-blue);
+}
+
+
+/* CART BACK BUTTON */
+
+.cart-box .back-button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #777;
+
+  color: white;
+
+  cursor: pointer;
+
+  margin-top: 10px;
+}
+
+
+.cart-box .back-button:hover {
+  background: #555;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .menu-header {
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: center;
+  }
+
+
+  .header-logo {
+    justify-content: center;
+  }
+
+
+  .home-content {
+    padding: 30px 20px;
+  }
+
+
+  .login-box {
+    width: 90%;
+  }
+
+
+  .cart-item {
+    gap: 10px;
+  }
+
+}
